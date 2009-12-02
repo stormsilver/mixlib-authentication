@@ -58,11 +58,11 @@ task :make_spec do
   end
 end
 
-Cucumber::Rake::Task.new(:features) do |t|
-  t.step_pattern = 'features/steps/**/*.rb'
-  supportdir = 'features/support'
-  t.cucumber_opts = "--format pretty -r #{supportdir}"
-end
+# Cucumber::Rake::Task.new(:features) do |t|
+#   t.step_pattern = 'features/steps/**/*.rb'
+#   supportdir = 'features/support'
+#   t.cucumber_opts = "--format pretty -r #{supportdir}"
+# end
 
 desc "remove build files"
 task :clean do
